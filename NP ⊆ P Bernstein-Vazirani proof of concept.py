@@ -28,8 +28,10 @@ while j > 0:
     j = j >> 1    
     res = bStr
 print("BINARY HASH SOLUTION:", str(''.join(res)))
-print("LENGTH:",len(str(''.join(res))),"\n")
-
+print("LENGTH:",len(str(''.join(res))))
+n = int(hexkey, 16)         
+print('Value in hexadecimal:', hexkey)
+print('Value in decimal:', n,"\n")
 key = str(res)
 
 def bv(i):
@@ -59,17 +61,34 @@ def bv(i):
         return countedkeys
     
 print("BINARY HASH SOLUTION:",res,"\n")
-bv_return = bv(res)
+#bv_return = bv(res)
 print("^^^ The Bernstein-Vazirani algorithm mirrors each binary with a qubit. ^^^ \n")
-print("BERNSTEIN-VAZIRANI QUANTUM ORACLE SOLUTION:", bv_return, "\n")
+#print("BERNSTEIN-VAZIRANI QUANTUM ORACLE SOLUTION:", bv_return, "\n")
 print("^^^ If there were theoretically the same number of qubits as the length of the",
-      "Binary Hash the Bernstein-Vazirani algorithm would serve as an example of P=NP ",
-      "since being able to prove that the subset of factorization is in NP ∩ co-NP or plainly: factorizing is a NP complete problem,",
-      "and since BQP--bounded-error quantum polynomial time is the class of decision problems solvable by a quantum computer in polynomial time,"
-      "therefore making Bernstein-Vazirani in P.",
+      "Binary Hash the Bernstein-Vazirani algorithm would serve as proof of P=NP since",
+      "being able to prove that the subset of factorization is in NP ∩ co-NP or plainly: factorizing is a NP complete problem,",
+      "and since BQP-bounded-error quantum polynomial time is the class of decision problems solvable by a quantum computer"
+      " in polynomial time, therefore making Bernstein-Vazirani in P.",
       "By solving the Boolean Satisfiability Problem from the solution provided by the Bernstein-Vazirani",
       "quantum oracle which satisfies a finite set, a finite alphabet",
-      "and a quantum finite state controller you equate NP with P or at the very least you show NP ⊆ P")
-      
-       
+      "and a quantum finite state controller you equate NP with P or at the very least you show NP ⊆ P ^^^\n")
 
+
+print("^^^ Do this by using Shor's algorithm to show that factorization ⊆ BQP and thus in NP then equate BQP-Shor's Algorithm",
+      "with BQP-Berstein-Vazirani's simulation of sha-256 foward encryption which is in P ^^^")
+
+
+"""
+If there were theoretically the same number of qubits as the length of the
+Binary Hash the Bernstein-Vazirani algorithm would serve as proof of P=NP since
+being able to prove that the subset of factorization is in NP ∩ co-NP or plainly:
+factorizing is a NP complete problem and since BQP--bounded-error quantum polynomial
+time is the class of decision problems solvable by a quantum computer in polynomial
+time, therefore making Bernstein-Vazirani in P. By solving the Boolean Satisfiability
+Problem from the solution provided by the Bernstein-Vazirani quantum oracle which
+satisfies a finite set, a finite alphabet and a quantum finite state controller you
+equate NP with P or at the very least you show NP ⊆ P
+
+Do this by using Shor's algorithm to show that factorization ⊆ BQP and thus in NP then equate BQP-Shor's Algorithm
+with BQP-Berstein-Vazirani's simulation of sha-256 foward encryption which is in P
+"""
